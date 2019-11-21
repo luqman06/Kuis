@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Klup bola yang memenangin liga champion adalah"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_toStartOf="@id/radioGroup"
+            android:layout_toLeftOf="@id/radioGroup"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:text="Raeal Madrid" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioButton"
+            android:layout_toStartOf="@id/radioButton"
+            android:layout_toLeftOf="@id/radioButton"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:text="Liverpool" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioButton2"
+            android:layout_toStartOf="@id/radioButton2"
+            android:layout_toLeftOf="@id/radioButton2"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:text="Barcelona" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioButton3"
+            android:layout_toStartOf="@id/radioButton3"
+            android:layout_toLeftOf="@id/radioButton3"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:text="Juventus" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>
